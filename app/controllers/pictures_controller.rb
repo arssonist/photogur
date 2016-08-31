@@ -1,4 +1,5 @@
 class PicturesController < ApplicationController
+
   def index
     @pictures = Picture.all
   end
@@ -10,9 +11,10 @@ class PicturesController < ApplicationController
   def new
   end
 
-  def create
-    render text: "Saving a picture. URL: #{params[:url]}, Title: #{params[:title]}, Artist: #{params[:artist]}"
-  end
+# this is example create text for create method
+  # def create
+  #   render text: "Saving a picture. URL: #{params[:url]}, Title: #{params[:title]}, Artist: #{params[:artist]}"
+  # end
 
   def new
     @picture = Picture.new
